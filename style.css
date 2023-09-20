@@ -1,0 +1,344 @@
+:root {
+  --primary: #19a7ce;
+  --secondary: #146c94;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--bg);
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav h4 {
+  margin-left: -110px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.navbar .navbar-nav .logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 2px;
+  margin: 0px 110px;
+}
+
+.navbar .navbar-nav a {
+  list-style: none;
+  display: inline;
+  padding: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0px 110px;
+}
+
+.navbar .navbar-extra .button {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .navbar-extra .button2 {
+  margin: 24px;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 8px 32px;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--bg);
+}
+
+/* Navbar End */
+
+/* Header Start*/
+
+header#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 100vh;
+  margin-left: 120px;
+  color: var(--primary);
+}
+
+header#hero .hero-title {
+  width: 50%;
+  margin-top: 62px;
+}
+
+header#hero .hero-title h1 {
+  margin-bottom: 32px;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+header#hero .hero-title button {
+  font-size: 16px;
+  width: 132px;
+  height: 46px;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+header#hero .umkm-img {
+  width: 680px;
+  margin-top: 62px;
+  margin-right: -30px;
+}
+
+.icons .fa-brands {
+  font-size: 41px;
+  margin-right: 32px;
+  color: var(--secondary);
+}
+
+/* Header End */
+
+/* Section Start */
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fbfd;
+}
+
+section .umkm-img2 {
+  margin-left: -200px;
+}
+
+section .detail {
+  width: 516px;
+  height: 200px;
+  text-align: center;
+  margin-right: 180px;
+}
+
+section .detail .detail-1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+section .detail .detail-2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+section .detail #description {
+  font-size: 16px;
+  margin-top: 32px;
+  letter-spacing: 1px;
+}
+
+/* Section End */
+
+/* Main Start */
+
+main {
+  width: 100%;
+  height: 90vh;
+}
+
+main .main-title {
+  text-align: center;
+  color: var(--primary);
+  margin: 50px 50px 80px 50px;
+}
+
+main .main-title p {
+  font-size: 32px;
+  margin: 12px;
+}
+
+main .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-content .product,
+.penjualan,
+.edukasi,
+.laporan {
+  text-align: center;
+  width: 264px;
+  height: 254px;
+  margin: 12px;
+  border: 1px solid #f6f1f1;
+  border-radius: 46px;
+  padding: 24px;
+  background-color: #f6f1f1;
+}
+
+main .main-content .product img,
+.penjualan img,
+.edukasi img,
+.laporan img {
+  padding: 24px;
+}
+
+main .main-content .product h1,
+.penjualan h1,
+.edukasi h1,
+.laporan h1 {
+  padding-bottom: 24px;
+  color: var(--primary);
+}
+
+/* Main End */
+
+/* Contact Start */
+
+div.contact {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 150px;
+}
+
+div.contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+div.contact .contact-info h1 {
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+div.contact .contact-info i {
+  font-size: 32px;
+  margin-right: 32px;
+  color: var(--secondary);
+}
+
+div.contact .contact-info a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+div.contact form {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 260px;
+  padding: 42px;
+  border: 1px solid #f6f1f1;
+  border-radius: 20px;
+  background-color: #f6f1f1;
+}
+
+div.contact form label {
+  font-weight: bold;
+}
+
+div.contact form #check {
+  margin-right: 8px;
+}
+
+div.contact form button {
+  margin-top: 20px;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 8px 32px;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--bg);
+}
+
+/* Contact End */
+
+/* Footer Start */
+
+footer {
+  width: 100%;
+  height: 235px;
+  background-color: #f9fbfd;
+}
+
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px 120px;
+}
+
+footer .footer-top .footer-title .logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+footer .footer-top .footer-title a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .footer-top .footer-title p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-top: 32px;
+}
+
+footer .footer-bottom .line {
+  border: 1px solid #d1d9e2;
+  margin: 32px 120px 32px 120px;
+}
+
+footer .footer-bottom p {
+  margin: 0px 120px;
+  text-align: center;
+  color: var(--primary);
+}
