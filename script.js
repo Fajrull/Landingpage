@@ -36,13 +36,18 @@ function submit() {
   if (validateFormData(formData)) {
     swal({
       title: "Good job!",
-      text: "You clicked the button!",
+      text: "Data berhasil dikirim!",
       icon: "success",
       button: "Aww yiss!",
     });
-    document.getElementById("warning").textContent = "Data berhasil dikirim";
+    document.getElementById("warning").textContent = "";
     // Code to handle successful form submission
   } else {
+    swal({
+      title: "Error",
+      icon: "error",
+      button: "Oke",
+    });
     document.getElementById("warning").textContent =
       "Periksa form anda sekali lagi";
   }

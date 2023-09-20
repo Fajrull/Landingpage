@@ -264,10 +264,6 @@ div.contact .contact-info a {
 
 div.contact form {
   height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
   margin-right: 260px;
   padding: 42px;
   border: 1px solid #f6f1f1;
@@ -275,8 +271,16 @@ div.contact form {
   background-color: #f6f1f1;
 }
 
+div.contact form #warning {
+  color: red;
+}
+
 div.contact form label {
   font-weight: bold;
+}
+
+div.contact form input {
+  margin: 10px 0px 10px 0px;
 }
 
 div.contact form #check {
@@ -284,13 +288,15 @@ div.contact form #check {
 }
 
 div.contact form button {
-  margin-top: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   border: 1px solid var(--primary);
   border-radius: 12px;
   padding: 8px 32px;
   background-color: var(--primary);
   text-decoration: none;
   color: var(--bg);
+  cursor: pointer;
 }
 
 /* Contact End */
